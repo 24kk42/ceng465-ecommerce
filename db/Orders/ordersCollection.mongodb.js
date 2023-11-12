@@ -1,2 +1,2 @@
-const collectionName = 'customers';
+const collectionName = 'orders';
 db.createCollection(collectionName);

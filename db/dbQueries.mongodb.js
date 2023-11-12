@@ -1,0 +1,1 @@
+db.orders.find({}, { _id: 1}).toArray()
