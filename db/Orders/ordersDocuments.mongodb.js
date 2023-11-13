@@ -213,4 +213,6 @@ for (const order of ordersData) {
 
   // Insert the current order into the 'orders' collection
   db.orders.insertOne(order);
+  db.orders.createIndex({ order_date: 1 },{name:"dateSortedIndex"});
+
 }
