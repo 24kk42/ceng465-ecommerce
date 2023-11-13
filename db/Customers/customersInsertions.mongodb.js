@@ -252,4 +252,7 @@ const customersData = [
   }
 ];
 
+
 db.customers.insertMany(customersData);
+db.customers.createIndex({ email: 1 }, { unique: true },{ name: "emailSortedIndex" });
+
